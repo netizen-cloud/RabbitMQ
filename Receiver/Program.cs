@@ -35,7 +35,7 @@ consumer.ReceivedAsync += async (sender, args) =>
 
 var cosumerTag = channel.BasicConsumeAsync(_queueName , false , consumer);
 
-
+//string test_commit = "new Commit";
 
 Console.ReadLine();
 
