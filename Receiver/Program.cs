@@ -35,6 +35,8 @@ consumer.ReceivedAsync += async (sender, args) =>
 
 var cosumerTag = channel.BasicConsumeAsync(_queueName , false , consumer);
 
+
+
 Console.ReadLine();
 
 await channel.CloseAsync();
