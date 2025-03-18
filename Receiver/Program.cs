@@ -23,6 +23,8 @@ await channel.BasicQosAsync(0, 1 , false);
 var consumer = new AsyncEventingBasicConsumer(channel);
 consumer.ReceivedAsync += async (sender, args) =>
 {
+    
+    // 
    // Console.WriteLine($"Inside msg received block");
     Thread.Sleep(TimeSpan.FromSeconds(3));
     var body = args.Body.ToArray();
